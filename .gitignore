@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Executables without extention
+*
+!*/
+!*.*
+
+# Vscode specific
+.vscode/
