@@ -35,6 +35,24 @@ void chercherVal (int tab[], int n, int A, int *pos, int *nb_occ){
         }
     }
 }
+void triCroissant(int *t, int taille){
+    int i, j, temp;
+    for(i = 0; i< taille; i++){
+        for(j = i+1; j<taille; j++){
+            if(t[i] > t[j]){
+                temp = t[i];
+                t[i] = t[j];
+                t[j] = temp;
+            }
+        }
+    }
+}
+void affiche(int *t, int taille){
+    for(int i = 0; i< taille; i++){
+        cout<<t[i]<<", ";
+    }
+    cout<<endl;
+}
 int main(){
     int taille;
     do{
@@ -51,7 +69,7 @@ int main(){
             cout<<"ENtrer l'element "<<i+1<<" :";
             cin>>t[i];
         }
-        cout<<"La somme des valeurs saisi est: "<<somme(t, taille)<<endl;
+        /*cout<<"La somme des valeurs saisi est: "<<somme(t, taille)<<endl;
         cout<<"la moyenne du tableau est: "<<moyenne(t, taille)<<endl;
         int v, p, occ;
         cout<<"Donner une valeur pour la recherche: ";
@@ -62,8 +80,11 @@ int main(){
             cout<<"La valeur existe dans la position: "<<p+1<<", "<<occ<<" fois."<<endl;
         else
             cout<<"La valeur n'existe pas"<<endl;
-    }
 
+        */
+        triCroissant(t, taille);
+        affiche(t, taille);
+    }
 
 
 
