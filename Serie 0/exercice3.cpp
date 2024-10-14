@@ -69,7 +69,7 @@ int main(){
             cout<<"ENtrer l'element "<<i+1<<" :";
             cin>>t[i];
         }
-        /*cout<<"La somme des valeurs saisi est: "<<somme(t, taille)<<endl;
+        cout<<"La somme des valeurs saisi est: "<<somme(t, taille)<<endl;
         cout<<"la moyenne du tableau est: "<<moyenne(t, taille)<<endl;
         int v, p, occ;
         cout<<"Donner une valeur pour la recherche: ";
@@ -81,7 +81,6 @@ int main(){
         else
             cout<<"La valeur n'existe pas"<<endl;
 
-        */
         triCroissant(t, taille);
         affiche(t, taille);
     }
