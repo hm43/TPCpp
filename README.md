@@ -8,7 +8,7 @@
 [Lien d'application](https://education.github.com/discount_requests/application?type=student)
 Il faut avoir un compte EMSI.
 
-## Les étapes pour trouber les solutions:
+## Les étapes pour trouver les solutions:
 
 Cliquez sur le nom du dossier de solutions (ex. : Série 0)
 
