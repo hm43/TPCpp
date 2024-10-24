@@ -25,6 +25,27 @@ void chercherVal (int tab[], int n, int A, int *pos, int *nb_occ){
         }
     }
 }
+
+
+void triCroissant(int *t, int taille){
+    int tmp;
+    for(int i=0; i< taille-1; i++){
+        for(int j = i+1; j< taille; j++){
+            if(t[i] > t[j]){
+                tmp = t[i];
+                t[i] = t[j];
+                t[j] = tmp;
+            }
+        }
+    }
+}
+void afficherTableau(int *t, int taille){
+    cout<<"Le tableau: "<<endl;
+    for(int i = 0; i< taille; i++){
+        cout<<t[i]<<endl;
+    }
+}
+
 int main(){
     int *tab, taille;
     do{
