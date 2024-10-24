@@ -41,7 +41,9 @@ int main(){
             cout<<"Donner le coefficiant de la note "<<j+1<<": ";
             cin>>e[i].notes[j].coefficient;
             cout<<"Donner le module de la note "<<j+1<<": ";
-            cin>>e[i].notes[j].module;
+            //cin>>e[i].notes[j].module;
+            getchar();
+            getline(cin, e[i].notes[j].module);
         }
 
     }
