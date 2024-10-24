@@ -26,6 +26,25 @@ void chercherVal(vector<int> tab, int A, int *pos, int *nb_occ){
     }
 }
 
+void triCroissant(vector<int> *t){
+    for(int i = 0; i<(*t).size(); i++){
+        for(int j = i+1; j< (*t).size(); j++){
+            if((*t)[i] > (*t)[j]){
+                int tmp = (*t)[i];
+                (*t)[i] = (*t)[j];
+                (*t)[j] = tmp;
+            }
+        }
+    }
+}
+
+void afficherTableau(vector<int> t){
+    cout<<"Le tableau: "<<endl;
+    for(int e: t){
+        cout<<e<<endl;
+    }
+}
+
 int main(){
     vector<int> tab;
     int taille;
@@ -53,7 +72,8 @@ int main(){
     }else{
         cout<<"La valeur n'existe pas.";
     }
-    
+    triCroissant(&tab);
+    afficherTableau(tab);
 
 
 
