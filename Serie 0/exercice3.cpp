@@ -23,6 +23,27 @@ void chercherVal (vector<int> tab, int A, int *pos, int *nb_occ){
         }
     }
 }
+
+void tricroissant(vector<int> *tab){
+    for(int i = 0; i< (*tab).size() -1 ; i++){
+        for(int j = i+1; j< (*tab).size(); j++){
+            if((*tab)[i] > (*tab)[j]){
+                int tmp = (*tab)[i];
+                (*tab)[i] = (*tab)[j];
+                (*tab)[j] = tmp;
+            }
+        }
+    }
+
+}
+
+void afficherTableau(vector<int> tab){
+    cout<<"affichage du tableau: "<<endl;
+    for(int i =0; i<tab.size(); i++){
+        cout<<tab[i]<<endl;
+    }
+}
+
 int main(){
     int taille;
     vector<int> tab;
@@ -37,6 +58,7 @@ int main(){
         cout<<"La valeur "<<i+1<<": ";
         cin>>tab[i];
     }
+    /*
     cout<<"La somme est: "<<somme(tab)<<endl;
     cout<<"La moyenne est: "<<moyenne(tab)<<endl<<endl;
     int valeur, pos, nbr_occ;
@@ -48,6 +70,9 @@ int main(){
     }else{
         cout<<"La valeur n'existe pas."<<endl<<endl;
     }
+*/
+    tricroissant(&tab);
+    afficherTableau(tab);
 
 
     return 0;
