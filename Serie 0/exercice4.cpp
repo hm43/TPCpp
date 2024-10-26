@@ -18,10 +18,12 @@ typedef struct {
 
 float moyenne(etudiant etud){
     float total = 0;
+    int totalC = 0; 
     for(int i = 0; i< M; i++){
         total += etud.notes[i].valeur * etud.notes[i].coeff;
+        totalC += etud.notes[i].coeff;
     }
-    return total/M;
+    return total/totalC;
 
 }
 
