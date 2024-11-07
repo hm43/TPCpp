@@ -9,6 +9,14 @@
 [Lien d'application](https://education.github.com/discount_requests/application?type=student)
 Il faut avoir un compte EMSI.
 
+# Liste des presentations
+
+[Ayoub et Abderrahman G7](<presentations/Ayoub et Abderrahman G7.pptx>)
+
+[FARNANI FERDAOUS et MOUKHLISS MALAK G7](<presentations/FARNANI FERDAOUS et MOUKHLISS MALAK G7.ppt>)
+
+[JOUICHAT KHADIJA G4](<presentations/Khadija jouichat G4.pdf>)
+
 ## Les étapes pour trouver les solutions:
 
 Cliquez sur le nom du dossier de solutions (ex. : Série 0)
