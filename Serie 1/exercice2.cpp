@@ -1,8 +1,6 @@
 #include<iostream>
 
 using namespace std;
-// marque (string), modele (string), annee (int), 
-// couleur (string), vitesse_maximale (int), vitesse_actuelle (int)
 
 class Voiture{
     private:
