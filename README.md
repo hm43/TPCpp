@@ -1,12 +1,21 @@
-# TPCpp
+# Liste des series
 
-[Serie 0](https://docs.google.com/document/d/1n1cVfpneKVwtF6rx_ASN6Te79mXGw1y4a_dU4hW1Oa0/edit?usp=sharing)
+[Lien vers la Serie 0 de révision (lien Google docs) ](https://docs.google.com/document/d/1n1cVfpneKVwtF6rx_ASN6Te79mXGw1y4a_dU4hW1Oa0/edit?usp=sharing)
 
+[Lien vers la Serie 1: Les classes (lien Google docs) ](https://docs.google.com/document/d/129pbjCYwaNMOTVOPOLeU_HPjk5E6tuVeaRTQeJ5hF-4/edit?usp=sharing)
 
 ## Github education pack:
 
 [Lien d'application](https://education.github.com/discount_requests/application?type=student)
 Il faut avoir un compte EMSI.
+
+# Liste des presentations
+
+[Ayoub et Abderrahman G7](<presentations/Ayoub et Abderrahman G7.pptx>)
+
+[FARNANI FERDAOUS et MOUKHLISS MALAK G7](<presentations/FARNANI FERDAOUS et MOUKHLISS MALAK G7.ppt>)
+
+[JOUICHAT KHADIJA G4](<presentations/Khadija jouichat G4.pdf>)
 
 ## Les étapes pour trouver les solutions:
 
