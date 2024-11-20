@@ -54,6 +54,7 @@ class PileChar{
             }else{
                 cout<<"La pile est vide."<<endl;
             }
+            return '\0';
         }
 
 
