@@ -39,13 +39,38 @@ class PileChar{
             }
             cout<<"]"<<endl;
         }
+        void empiler(char c){
+            if( sommet != max){
+                pile[sommet] = c;
+                sommet++;
+            }else{
+                cout<<"La pile est pleine."<<endl;
+            }
+        }
+        char depiler(){
+            if(sommet != 0){
+                char c = pile[--sommet];
+                return c;
+            }else{
+                cout<<"La pile est vide."<<endl;
+            }
+        }
+
 
 };
+
 int main(){
-    PileChar p1, p2(3);
+    PileChar p1(20);
+    p1.empiler('a');
+    p1.empiler('b');
+    p1.empiler('c');
+    p1.afficher();
+
+    char c = p1.depiler();
+    cout<<"Le caractere depiler est: "<<c<<endl;
+    p1.afficher();
 
 
 
-    cout<<endl<<endl;
     return 0;
 }
