@@ -11,7 +11,7 @@ Produit::~Produit(){
 float Produit::getTotalSales(){
     return totalSales;
 }
-void Produit::resetTotal(){
+void Produit::resetSales(){
     totalSales = 0;
 }
 float Produit::totalSales = 0;

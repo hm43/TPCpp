@@ -11,5 +11,5 @@ class Produit{
         Produit(string, float);
         ~Produit();
         static float getTotalSales();
-        static void resetTotal();
+        static void resetSales();
 };
