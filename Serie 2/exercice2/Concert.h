@@ -15,4 +15,5 @@ class Concert{
         Concert(string, string, int, int);
         void afficherDetails(bool=true, bool=true, bool=true, bool=true);
         static int getTotalConcerts();
+        static void resetSales();
 };

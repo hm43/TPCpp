@@ -24,3 +24,7 @@ void Concert::afficherDetails(bool afficherNom, bool afficherDate, bool afficher
 int Concert::getTotalConcerts(){
     return totalConcerts;
 }
+
+void Concert::resetSales(){
+    totalConcerts = 0;
+}
