@@ -14,6 +14,8 @@ class Concert{
         void afficherDetails(bool afficherNom = true, bool afficherDate = true, bool afficherHeure = true, bool afficherDuree = true);
         static int getTotalConcerts();
         // exercice 3
+        // concert + concert => operateur membre
+        // different + concert => operateur ami
         Concert operator+(const Concert &);
         Concert& operator-(int);
         bool operator==(const Concert &);
