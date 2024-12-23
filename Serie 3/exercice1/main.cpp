@@ -3,39 +3,34 @@
 #include "Etudiant.h"
 
 using namespace std;
-
-void emprunterLivre(Etudiant & e, Livre & l){
+void emprunterLivre(Etudiant &e, Livre &l){
     if(l.estEmprunte){
-        cout<<"Le livre n'est pas disponible";
-
+        cout<<"Le livre est deja emprinte"<<endl;
     }else if(e.nbLivresEmpruntes == MAX_LIVRES_EMPRUNTABLES){
-        cout<<"Vous ne pouvez pas emprunter un autre livre.";
+        cout<<"Vous avez emprunter le max"<<endl;
     }else{
-       for(int i = 0; i< MAX_LIVRES_EMPRUNTABLES; i++){
-        if(e.livresEmpruntes[i] == nullptr){
-           e.livresEmpruntes[i] = &l;
-            e.nbLivresEmpruntes++;
-            l.estEmprunte = true;
-            cout<<"Livre bien emprunter"<<endl;
-            break;
+        for(int i = 0; i< MAX_LIVRES_EMPRUNTABLES; i++){
+            if(e.livresEmpruntes[i] == nullptr){
+                e.livresEmpruntes[i] = &l;
+                e.nbLivresEmpruntes++;
+                l.estEmprunte = true;
+                cout<<"Livre emprinter"<<endl;
+                break;
+            }
         }
-       } 
     }
-
 }
-
-void rendreLivre(Etudiant & e, Livre & l){
-    for(int i = 0; i< 3; i++){
+void rendreLivre(Etudiant &e, Livre &l){
+    for(int i =0; i< MAX_LIVRES_EMPRUNTABLES; i++){
         if(e.livresEmpruntes[i] == &l){
-            e.livresEmpruntes[i]=nullptr;
+            e.livresEmpruntes[i] = nullptr;
             e.nbLivresEmpruntes--;
             l.estEmprunte = false;
-            cout<<"Le livre est disponible"<<endl;
+            cout<<"Le livre est rendu"<<endl;
             break;
         }
-       } 
+    }
 }
-
 int main(){
     Livre l("titre", "auteur", "123");
     Livre l2("titre", "auteur", "123");
@@ -45,7 +40,7 @@ int main(){
     emprunterLivre(e, l);
     emprunterLivre(e, l2);
     emprunterLivre(e, l3);
-    rendreLivre(e,l2);
+    rendreLivre(e, l);
     emprunterLivre(e, l4);
     return 0;
 }
