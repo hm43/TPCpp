@@ -5,6 +5,7 @@
 
 using namespace std;
 
+const int MAX_LIVRES_EMPRUNTABLES = 3; 
 class Etudiant {
 private:
     string nom;

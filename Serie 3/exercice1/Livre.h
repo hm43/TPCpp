@@ -4,8 +4,6 @@
 class Etudiant;
 using namespace std;
 
-const int MAX_LIVRES_EMPRUNTABLES = 3; 
-
 class Livre{
 private:
     string titre;
