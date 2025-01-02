@@ -6,5 +6,5 @@ class Magazine: public RessourceMedia{
         int numero_actuel;
     public:
         Magazine(string, string, int, string, int);
-        void afficherDetails() const;
+        void afficherDetails() const override;
 };

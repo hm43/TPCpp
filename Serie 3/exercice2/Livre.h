@@ -6,5 +6,5 @@ class Livre: public RessourceMedia{
         int nbrPages;
     public:
         Livre(string, string, int, string, int);
-        void afficherDetails() const;
+        void afficherDetails() const override;
 };

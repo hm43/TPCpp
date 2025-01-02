@@ -6,5 +6,5 @@ class DVD:public RessourceMedia{
         int duree;
     public:
         DVD(string, string, int, string, int);
-        void afficherDetails() const;
+        void afficherDetails() const override;
 };
