@@ -1,10 +1,12 @@
-#include "RessourceMedia.h"
 #include <iostream>
+#include "RessourceMedia.h"
 using namespace std;
-RessourceMedia::RessourceMedia(string t, string a, int annee):
-titre(t), auteur(a), annee(annee){}
-void RessourceMedia::afficherDetails(){
-    cout<<"Le titre: "<<titre<<endl;
-    cout<<"L'auteur: "<<auteur<<endl;
-    cout<<"L'annee de publication: "<<annee<<endl;
+
+RessourceMedia::RessourceMedia(string titre, string auteur, int annee):
+titre(titre), auteur(auteur), annee(annee){}
+
+void RessourceMedia::afficherDetails() const{
+    cout<<"Titre: "<<titre<<endl;
+    cout<<"Auteur: "<<auteur<<endl;
+    cout<<"Annee de publication: "<<annee<<endl;
 }

@@ -1,11 +1,13 @@
+#include <iostream>
 #include "Livre.h"
-#include<iostream>
-using namespace std;
-Livre::Livre(string t, string a, int annee, string g, int nbr):
-    RessourceMedia(t, a, annee), genre(g), nbrPages(nbr){}
 
-void Livre::afficherDetails(){
+using namespace std;
+
+Livre::Livre(string titre, string auteur, int annee, string genre, int nbrPages):
+RessourceMedia(titre, auteur, annee), genre(genre), nbrPages(nbrPages)
+{}
+void Livre::afficherDetails() const{
     RessourceMedia::afficherDetails();
-    cout<<"Genre: "<<genre<<endl;
-    cout<<"Nombre de pages: "<<nbrPages<<endl;
+    cout<<"Le genre: "<<genre<<endl;
+    cout<<"Le nombre de pages: "<<nbrPages<<endl;
 }

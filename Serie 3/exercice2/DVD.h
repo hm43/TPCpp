@@ -1,10 +1,10 @@
 #include "RessourceMedia.h"
 
-class Livre: public RessourceMedia{
+class DVD:public RessourceMedia{
     private:
         string genre;
-        int nbrPages;
+        int duree;
     public:
-        Livre(string, string, int, string, int);
+        DVD(string, string, int, string, int);
         void afficherDetails() const;
 };
