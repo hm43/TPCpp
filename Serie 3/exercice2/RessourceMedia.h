@@ -1,3 +1,6 @@
+#ifndef R
+#define R
+
 #include <string>
 
 using namespace std;
@@ -6,8 +9,10 @@ class RessourceMedia{
     protected:
         string titre;
         string auteur;
-        int anneePublication;
+        int annee;
     public:
         RessourceMedia(string, string, int);
-        void afficherDetails();
+        void afficherDetails() const;
 };
+
+#endif
