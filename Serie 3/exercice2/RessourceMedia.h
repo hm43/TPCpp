@@ -12,7 +12,7 @@ class RessourceMedia{
         int annee;
     public:
         RessourceMedia(string, string, int);
-        void afficherDetails() const;
+        virtual void afficherDetails() const;
 };
 
 #endif
