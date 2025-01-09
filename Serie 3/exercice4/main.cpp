@@ -37,15 +37,35 @@ void Triangle::afficher() const {
 string Triangle::description() const{
     return "Triangle";
 }
+
+class Carre: public Figure{
+    double cote;
+    public:
+        Carre(double x=0, double y=0, double z=0, double cote = 1);
+        Carre(const Carre &);
+        void afficher() const override;
+        string description() const override;
+};
+
+Carre::Carre(double x, double y, double z, double cote):
+Figure(x, y, z), cote(cote){}
+Carre::Carre(const Carre &c):Figure(c), cote(c.cote){}
+void Carre::afficher() const {
+    Figure::afficher();
+    cout<<cote<<endl;
+}
+string Carre::description() const{
+    return "Carré";
+}
 void afficherInfos(Figure * f){
     cout<<"Je suis un(e) "<<f->description()<<endl;
-    cout<<"Mes attributs :";
+    cout<<"Mes attributs sont:";
     f->afficher();
 }
 int main(){
-    Figure f(2, 3, -1);
-    Triangle t(2, 3, -1, 20, 15, 18, 10);
+    Triangle t(0, 0, 0, 20, 15, 18, 10);
+    Carre c(0,0,0, 3);
     afficherInfos(&t);
-
+    afficherInfos(&c);
     return 0;
 }
