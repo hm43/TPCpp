@@ -1,3 +1,5 @@
+#ifndef E
+#define E
 #include<string>
 using namespace std;
 
@@ -11,3 +13,4 @@ class Employe{
         Employe(const Employe &);
         virtual void afficherInformation();
 };
+#endif
