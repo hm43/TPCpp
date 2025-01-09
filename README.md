@@ -8,6 +8,9 @@
 [Lien vers la Serie 2: membres static & surcharge des fonctions (lien Google docs) ](https://docs.google.com/document/d/1EEPqdWuI8E-fZVfg4YJBi_yneacnNLqn3Y6wJxkogWY/edit?usp=sharing)
 
 [Lien vers la Serie 3:ami et heritage (lien Google docs) ](https://docs.google.com/document/d/1DlIRizRBUJSAmFU4skXmmeFLlaL1yDVAj8W4_jXAGXE/edit?usp=sharing)
+
+[Lien vers la Serie 4 (lien Google docs) ](https://docs.google.com/document/d/1aIxlbaCv6bQGN9r5g0jJISEg6MMuVjzY8qTdTgNGtyU/edit?usp=sharing)
+
 ## Github education pack:
 
 [Lien d'application](https://education.github.com/discount_requests/application?type=student)
